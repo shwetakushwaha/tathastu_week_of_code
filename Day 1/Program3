@@ -1,0 +1,6 @@
+a = int(input("enter 1st no. a : "))
+b = int(input("enter 2nd no. b : "))
+a = a+b
+b = a-b
+a = a-b
+print("the swapped values are a =",a,"b = ",b)
