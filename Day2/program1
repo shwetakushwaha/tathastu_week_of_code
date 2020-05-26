@@ -1,0 +1,38 @@
+n = int(input("input a number"))
+flag = 0
+c = 0
+a = n
+if n%2==0:
+    print("no. is even")
+else:
+    print("no.is odd")
+for a in range(a-1,1,-1):
+    if n%a==0:
+        flag=1
+        break
+if flag==1:
+    print("it is not a prime no.")
+else:
+    print("it is a prime no.")
+a=n
+rem=1
+div=0
+while a>0:
+    c+=1
+    rem = a%10
+    div = (div*10)+rem
+    a = a//10
+if div==n:
+    print("the no. is a palindrome")
+else:
+    print("the no. is not a palindrome")
+    a = n
+    arm=0
+while a>0:
+    rem=a%10
+    arm=rem**c+arm
+    a=a//10
+if n==arm:
+     print("the no. is armsrtong")
+else:
+    print("the no. is not armstrong")
